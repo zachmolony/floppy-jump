@@ -13,6 +13,8 @@ function step() {
 
     player3.x += player3.velocity.x;
     player3.y += player3.velocity.y;
+    
+    // player to bar collision
 
     if (!player1.collide(bar1) && !player1.collide(bar2) && !player1.collide(bar3) && !player1.collide(bar4)) {
         player1.velocity.y += 1;
@@ -33,5 +35,19 @@ function step() {
     }
     else {
         player3.velocity.y = 0;
+    }
+    
+    // player to player collision
+    
+    if (!player1.collide(player2) && !player1.collide(player3)) {
+        //player1.velocity.x = 0;
+    }
+    
+    if (!player2.collide(player1) && !player2.collide(player3)) {
+        //player1.velocity.x += 1;
+    }
+    
+    if (!player3.collide(player1) && !player3.collide(player2)) {
+        //player1.velocity.x += 1;
     }
 }

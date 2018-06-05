@@ -7,7 +7,7 @@ function setup() {
     player1 = createSprite(200, 400, PLAYER1.size, PLAYER1.size)
     player1.velocity.y = PLAYER1.velocity.y
     player1.velocity.x = PLAYER1.velocity.x
-    player1.x = 200
+    player1.x = 100
     player1.y = 250
     player1.addImage(PLAYER1.img)
     player1.scale = PLAYER1.scale
@@ -26,12 +26,12 @@ function setup() {
     player2.restitution = PLAYER2.restitution
     player2.gravity = PLAYER2.gravity
     
-    // player 2
+    // player 3
 
     player3 = createSprite(200, 400, PLAYER3.size, PLAYER3.size)
     player3.velocity.y = PLAYER3.velocity.y
     player3.velocity.x = PLAYER3.velocity.x
-    player3.x = 200
+    player3.x = 300
     player3.y = 250
     player3.addImage(PLAYER3.img)
     player3.scale = PLAYER3.scale
