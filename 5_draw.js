@@ -5,13 +5,13 @@ function draw() {
     bar1.debug = mouseIsPressed
     // when the sprite reaches the bottom of the screen
     let spriteBottom = getSpriteBottom()
-    if (spriteBottom <= height) {  
-    //console.log("You died. ")
+    if (spriteBottom < 0) {  
+        //player1.position.y = 300
     }
 
     let spriteTop = getSpriteTop()
     if (spriteTop === 0) {
-    //player1.position.y = 0
+        //player1.position.y = 0
     }
 
     // constant downward speed (i.e. gravity)
@@ -91,7 +91,9 @@ function draw() {
         bar4.position.x = (200)
         bar4.position.y = 0
     }
+    
     //check floppys at bottom
+    
     if (floppy1.position.y > 600 || floppy1.position.x > windowWidth) {
         floppy1.position.x = (-38)
         floppy1.position.y = (bar1.position.y - 50)
@@ -107,6 +109,30 @@ function draw() {
     if (floppy4.position.y > 600 || floppy4.position.x > windowWidth) {
         floppy4.position.x = (-38),
         floppy4.position.y = (bar4.position.y - 50)
+    }
+
+    // top of screen check
+    
+    if (player1.position.y < 0) {
+        score1 -= 1;
+    }
+    if (player2.position.y < 0) {
+        score2 -= 1;
+    }
+    if (player3.position.y < 0) {
+        score3 -= 1;
+    }
+    
+    // bottom of screen check
+    
+    if (player1.position.y > 600) {
+        score1 -= 1;
+    }
+    if (player2.position.y > 600) {
+        score2 -= 1;
+    }
+    if (player3.position.y > 600) {
+        score3 -= 1;
     }
 
     // SCORES
