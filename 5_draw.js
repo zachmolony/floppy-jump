@@ -84,19 +84,19 @@ function draw() {
     
     //check floppys at bottom
     
-    if (floppy1.position.y > 600 || floppy1.position.x > windowWidth) {
+    if (floppy1.position.y > 600 || floppy1.position.x > 400) {
         floppy1.position.x = (-38);
         floppy1.position.y = (bar1.position.y - 50);
     }
-    if (floppy2.position.y > 600 || floppy2.position.x > windowWidth) {
+    if (floppy2.position.y > 600 || floppy2.position.x > 400) {
         floppy2.position.x = (-38);
         floppy2.position.y = (bar2.position.y - 50);
     }
-    if (floppy3.position.y > 600 || floppy3.position.x > windowWidth) {
+    if (floppy3.position.y > 600 || floppy3.position.x > 400) {
         floppy3.position.x = (-38);
         floppy3.position.y = (bar3.position.y - 50);
     }
-    if (floppy4.position.y > 600 || floppy4.position.x > windowWidth) {
+    if (floppy4.position.y > 600 || floppy4.position.x > 400) {
         floppy4.position.x = (-38);
         floppy4.position.y = (bar4.position.y - 50);
     }
@@ -142,18 +142,18 @@ function draw() {
     image(p1icon, 20, 20, 40, 40)
     
     if (score1 >= 66) {
-        image(p1s3_img, 70, 20, 40, 40)
+        image(p1s3_img, 70, 20, 40, 40);
     }
     else if (score1 >= 33) {
-        image(p1s2_img, 70, 20, 40, 40)
+        image(p1s2_img, 70, 20, 40, 40);
     }
     else if (score1 >= 1) {
-        image(p1s1_img, 70, 20, 40, 40)
+        image(p1s1_img, 70, 20, 40, 40);
     }
     else {
-        image(p1s0_img, 70, 20, 40, 40)
-        image(skull1, 20, 20, 40, 40)
-        player1.remove()
+        image(p1s0_img, 70, 20, 40, 40);
+        image(skull1, 20, 20, 40, 40);
+        player1.remove();
     }
     
     // score images player 2

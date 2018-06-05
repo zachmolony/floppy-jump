@@ -81,7 +81,7 @@ function setup() {
 
     floppy1 = createSprite(-38, -50, FLOPPY1.size, FLOPPY1.size)
     floppy1.velocity.y = BAR1.velocity.y
-    floppy1.velocity.x = 1
+    floppy1.velocity.x = 3
     floppy1.addImage(FLOPPY1.img)
     floppy1.scale = FLOPPY1.scale
     floppy1.restitution = FLOPPY1.restitution
@@ -91,7 +91,7 @@ function setup() {
 
     floppy2 = createSprite(-38, 100, FLOPPY2.size, FLOPPY2.size)
     floppy2.velocity.y = BAR1.velocity.y
-    floppy2.velocity.x = 1
+    floppy2.velocity.x = 2
     floppy2.addImage(FLOPPY2.img)
     floppy2.scale = FLOPPY2.scale
     floppy2.restitution = FLOPPY2.restitution
@@ -111,7 +111,7 @@ function setup() {
 
     floppy4 = createSprite(-38, 400, FLOPPY4.size, FLOPPY4.size)
     floppy4.velocity.y = BAR1.velocity.y
-    floppy4.velocity.x = 1
+    floppy4.velocity.x = 4
     floppy4.addImage(FLOPPY4.img)
     floppy4.scale = FLOPPY4.scale
     floppy4.restitution = FLOPPY4.restitution
