@@ -1,8 +1,8 @@
 # Floppy Jump
 
-An emoji game about jumping and floppy disks.
+A 3 player game about jumping and floppy disks.
 
-Made using p5
+Made using p5 and emojis.
 
 
 
