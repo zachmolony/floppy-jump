@@ -4,43 +4,6 @@ function windowResized() {
   resizeCanvas(400, 600)
 }
 
-// some syntax error here vvv unexpected token
-function getSpriteBottom() {
-  return player1.position.y + player1.height/2 * player1.scale
-}
-
-function getSpriteTop() {
-  return player1.position.y - player1.height/2 * player1.scale
-}
-
-function getSpriteFloor() {
-  return height - player1.height/2 * player1.scale
-}
-
-function getSprite2Bottom() {
-  return player2.position.y + player2.height/2 * player2.scale
-}
-
-function getSprite2Top() {
-  return player2.position.y - player2.height/2 * player2.scale
-}
-
-function getSprite2Floor() {
-  return height - player2.height/2 * player2.scale
-}
-
-function getSprite3Bottom() {
-  return player3.position.y + player3.height/2 * player3.scale
-}
-
-function getSprite3Top() {
-  return player3.position.y - player3.height/2 * player3.scale
-}
-
-function getSpriteFloor3() {
-  return height - player3.height/2 * player3.scale
-}
-
 function step() {
     player1.x += player1.velocity.x;
     player1.y += player1.velocity.y;

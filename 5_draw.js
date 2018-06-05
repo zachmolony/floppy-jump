@@ -3,16 +3,6 @@ function draw() {
     background(1)
 
     bar1.debug = mouseIsPressed
-    // when the sprite reaches the bottom of the screen
-    let spriteBottom = getSpriteBottom()
-    if (spriteBottom < 0) {  
-        //player1.position.y = 300
-    }
-
-    let spriteTop = getSpriteTop()
-    if (spriteTop === 0) {
-        //player1.position.y = 0
-    }
 
     // constant downward speed (i.e. gravity)
     player1.addSpeed(player1.gravity, 90)
@@ -76,39 +66,39 @@ function draw() {
 
     //check bar at bottom
     if (bar1.position.y > 600) {
-        bar1.position.x = (200)
-        bar1.position.y = 0
+        bar1.position.x = (200);
+        bar1.position.y = 0;
     }
     if (bar2.position.y > 600) {
-        bar2.position.x = (200)
-        bar2.position.y = 0
+        bar2.position.x = (200);
+        bar2.position.y = 0;
     }
     if (bar3.position.y > 600) {
-        bar3.position.x = (200)
-        bar3.position.y = 0
+        bar3.position.x = (200);
+        bar3.position.y = 0;
     }
     if (bar4.position.y > 600) {
-        bar4.position.x = (200)
-        bar4.position.y = 0
+        bar4.position.x = (200);
+        bar4.position.y = 0;
     }
     
     //check floppys at bottom
     
     if (floppy1.position.y > 600 || floppy1.position.x > windowWidth) {
-        floppy1.position.x = (-38)
-        floppy1.position.y = (bar1.position.y - 50)
+        floppy1.position.x = (-38);
+        floppy1.position.y = (bar1.position.y - 50);
     }
     if (floppy2.position.y > 600 || floppy2.position.x > windowWidth) {
-        floppy2.position.x = (-38),
-        floppy2.position.y = (bar2.position.y - 50)
+        floppy2.position.x = (-38);
+        floppy2.position.y = (bar2.position.y - 50);
     }
     if (floppy3.position.y > 600 || floppy3.position.x > windowWidth) {
-        floppy3.position.x = (-38),
-        floppy3.position.y = (bar3.position.y - 50)
+        floppy3.position.x = (-38);
+        floppy3.position.y = (bar3.position.y - 50);
     }
     if (floppy4.position.y > 600 || floppy4.position.x > windowWidth) {
-        floppy4.position.x = (-38),
-        floppy4.position.y = (bar4.position.y - 50)
+        floppy4.position.x = (-38);
+        floppy4.position.y = (bar4.position.y - 50);
     }
 
     // top of screen check
