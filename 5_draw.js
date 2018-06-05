@@ -137,6 +137,7 @@ function draw() {
     else {
         image(p1s0_img, 70, 20, 40, 40)
         image(skull1, 20, 20, 40, 40)
+        player1.remove()
     }
     
     // score images player 2
@@ -155,6 +156,7 @@ function draw() {
     else {
         image(p2s0_img, 200, 20, 40, 40)
         image(skull1, 150, 20, 40, 40)
+        player2.remove()
     }
     
     // score images player 3
@@ -173,6 +175,16 @@ function draw() {
     else {
         image(p3s0_img, 330, 20, 40, 40)
         image(skull1, 280, 20, 40, 40)
+        player3.remove()
+    }
+    
+    // game over check
+    
+    if ((score1 < 1) && (score2 < 1) && (score3 < 1)) {
+        //clear()
+        fill(255)
+        textSize(50)
+        text("Game over :(", 50, 300)
     }
 }
 
